@@ -9,13 +9,13 @@
 </head>
 <body>
      <!-- Nav bar-->
-    <header class="fixed w-full bg-slate-800 p-1" >
-        <nav class="p-1 flex">
+      <header class="fixed max-w-screen top-0 left-0 right-0 z-50 bg-slate-800 p-1" >
+        <nav class="p-1 flex justify-center sm:text-base sm:max-w-screen sm:justify-start">
             <div class="p-1 flex auto items-center justify-between">
-                <i class="bi-envelope-at" style="font-size:medium; color:antiquewhite; margin-right:10px;"></i>
-                <i class="bi bi-linkedin" style="font-size:medium; color:antiquewhite;"></i>
+                <a href="#email"><i class="bi-envelope-at" style="font-size:medium; color:antiquewhite; margin-right:10px;"></i></a>
+                <a href="#linkedin"><i class="bi bi-linkedin" style="font-size:medium; color:antiquewhite;"></i></a>
             </div>
-            <div class="w-full flex flex auto justify-end font-Inter font-regular">
+            <div class="flex auto max-w-screen font-Inter font-regular text-xl sm:text-base">
                 <a class="text-olive-50 m-2 p-2 rounded-md shadow-xl/20
                 sm:inline text-sm hover:bg-slate-700" href="index.html">About</a>
                 <a class="text-olive-50 m-2 p-2 rounded-md shadow-xl/20 
@@ -25,22 +25,51 @@
             </div>
         </nav>
     </header>
+
+    <!-- Image Gallery-->
+    <section class= "relative p-2 bg-slate-50">
+        <h1 class="font-Inter text-4xl text-slate-700 font-bold mt-20 ml-20 p-5"> Image Gallery</h1>
+        <div class="container mx-auto mt-10 mb-10">
+            <div class="gap-5 columns-1 sm:columns-2 md:columns-3 space-y-4">
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/anupam-raisim-kerketta-Um83jYHi3J4-unsplash.jpg" width="232" height="290" 
+                alt="Dark green and grey waves"/>
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/anupam-raisim-kerketta-YCv3NNjYi6Q-unsplash.jpg" width="232" height="290" 
+                alt="Abstract background with two wavy colour blocks"/>
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/brigitte-elsner-j3CktdBdPpM-unsplash.jpg" width="232" height="174" 
+                alt="Boquet of pink tuplips against a blue background" />
+         
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/pawel-czerwinski-pC8e7FFONcI-unsplash.jpg" width="232" height="155" 
+                alt="Black and dark grey intersecting waves"/>
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/public-domain-vectors-9fRz9KKhOTg-unsplash.jpg" width="232" height="349" 
+                alt="Abstract shades of blue intersecting"/>
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/shahadat-osman-MYLgGtYdB0M-unsplash.jpg" width="232" height="250" 
+                alt="wavy blocks of blue, orange and white"/>
+            
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/sonika-agarwal-50J9PFD1n2c-unsplash.jpg" width="232" height="349" 
+                alt="Vibrant geometric pattern of colourful squares and triangles"/>
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/sumit-singh-c7BEDRhohNE-unsplash.jpg" width="232" height="155" 
+                alt="Intersecting beige and red wavy shapes"/>
+                <img class="w-full rounded-xl shadow" src="../src/assets/images/vectorelements-YPs1v3IBHdM-unsplash.jpg" width="232" height="250" 
+                alt="Man interacting with cloud data upload on smartphone"/>
+            </div>                 
+        </div>
+    </section>
    
     <!-- Footer -->
-    <footer class="absolute bottom-0 left-0 bg-slate-900 p-1 w-full font-Inter" >
-            <nav class="p-1 flex justify-center">
-                <a class="text-olive-50 text-xs m-1 p-0.5 hover:text-slate-700" href="index.html">About</a>
-                <a class="text-olive-50 text-xs m-1 p-0.5 hover:text-slate-700" href="gallery.html">Gallery</a>
-                <a class="text-olive-50 text-xs m-1 p-0.5 hover:text-slate-700" href="#contact">Contact</a>
-            </nav>
-            <div class="flex flex-col p-2">
-                <p class="text-olive-50 text-xs">&copy; JT ltd.</p>
-                <p class="text-olive-50 text-xs">44 Address Road <br>
-                    LivingPlace<br>
-                    4444
-                </p>
-                <p class="text-olive-50 text-xs">brought to you by TailwindCSS</p>
-            </div>
-        </footer>
+   <footer class="m-0 p-2 bg-slate-900 p-1 max-w-screen font-Inter" >
+        <nav class="p-1 flex justify-center">
+            <a class="text-olive-50 text-xs m-1 p-0.5 hover:text-slate-700" href="index.html">About</a>
+            <a class="text-olive-50 text-xs m-1 p-0.5 hover:text-slate-700" href="gallery.html">Gallery</a>
+            <a class="text-olive-50 text-xs m-1 p-0.5 hover:text-slate-700" href="#contact">Contact</a>
+        </nav>
+        <div class="flex flex-col p-2">
+            <p class="text-olive-50 text-xs">&copy; JT ltd.</p>
+            <p class="text-olive-50 text-xs">44 Address Road <br>
+                LivingPlace<br>
+                4444
+            </p>
+            <p class="text-olive-50 text-xs">brought to you by TailwindCSS</p>
+        </div>
+    </footer>
 </body>
 </html>

@@ -11,13 +11,13 @@
 </head>
 <body>
     <!-- Nav bar-->
-    <header class=" w-full fixed top-0 left-0 z-50 bg-slate-800 p-1" >
-        <nav class="p-1 flex">
+    <header class="fixed max-w-screen top-0 left-0 right-0 z-50 bg-slate-800 p-1" >
+        <nav class="p-1 flex justify-center sm:text-base sm:max-w-screen sm:justify-start">
             <div class="p-1 flex auto items-center justify-between">
-                <i class="bi-envelope-at" style="font-size:medium; color:antiquewhite; margin-right:10px;"></i>
-                <i class="bi bi-linkedin" style="font-size:medium; color:antiquewhite;"></i>
+                <a href="#email"><i class="bi-envelope-at" style="font-size:medium; color:antiquewhite; margin-right:10px;"></i></a>
+                <a href="#linkedin"><i class="bi bi-linkedin" style="font-size:medium; color:antiquewhite;"></i></a>
             </div>
-            <div class="w-full flex flex auto justify-end font-Inter font-regular">
+            <div class="flex auto max-w-screen font-Inter font-regular text-xl sm:text-base">
                 <a class="text-olive-50 m-2 p-2 rounded-md shadow-xl/20
                 sm:inline text-sm hover:bg-slate-700" href="index.html">About</a>
                 <a class="text-olive-50 m-2 p-2 rounded-md shadow-xl/20 
@@ -30,8 +30,8 @@
 
     <!-- Intro section -->
     <section  class="bg-[url(../src/assets/images/anupam-raisim-kerketta-YCv3NNjYi6Q-unsplash.jpg)] bg-cover 
-                    relative p-4 text-olive-950 font-Inter flex justify-center">
-        <div class="mt-20 p-4 max-w-1/2 flex flex-col gap-4 bg-gray-50 rounded-lg shadow-lg">
+                    relative w-max-screen p-4 text-olive-950 font-Inter flex justify-center">
+        <div class="mt-20 p-4 max-w-9/10 sm:max-w-1/2 flex flex-col gap-4 bg-gray-50 rounded-lg shadow-lg">
             <h1 class="font-bold text-xl">John Smith - Photographer</h1>
             <p class="font-regular">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie vulputate nulla,
@@ -49,21 +49,20 @@
     </section >
 
     <!-- Projects-->
-    <section  class="relative p-4 mt-10 font-Inter">
+    <section  class="relative p-4 mt-10 max-w-screen flex flex-col content-center font-Inter">
         <h1 class="mb-5 p-3 font-bold text-xl">Featured Projects</h1>
-        <div class="p-4 m-auto max-w-9/10 flex justify-around gap-4">
-            <div class="max-w-3/10 p-5 flex flex-col content-center rounded-lg shadow-lg">
+        <div class="m-0 p-0 max-w-screen flex flex-col content-center sm:flex-row justify-around gap-4">
+            <div class="max-w-9/10 sm:max-w-3/10 p-5 flex flex-col rounded-lg shadow-lg">
                 <h2 class="mb-3 text-lg text-center font-bold">Project 1</h2>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie vulputate nulla,
                 non gravida dolor aliquam ac. </p>
-
             </div>
-            <div class="max-w-3/10 p-5 flex flex-col content-center rounded-lg shadow-lg">
+            <div class="max-w-9/10 sm:max-w-3/10 p-5 flex flex-col content-center rounded-lg shadow-lg">
                 <h2 class="mb-3 text-lg text-center font-bold">Project 2</h2>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie vulputate nulla,
                 non gravida dolor aliquam ac. </p>
             </div>
-            <div class="max-w-3/10 p-5 flex flex-col content-center rounded-lg shadow-lg">
+            <div class="max-w-9/10 sm:max-w-3/10 p-5 flex flex-col content-center rounded-lg shadow-lg">
                 <h2 class="mb-3 text-lg text-center font-bold">Project 3</h2>
                 <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie vulputate nulla,
                 non gravida dolor aliquam ac. </p>
@@ -73,19 +72,19 @@
      <!-- Bio Section-->
     <section class="relative p-4 font-Inter">
         <h1 class="font-bold text-xl mb-10 p-3">About Me</h1>
-        <aside class="flex justify-around p-5 mb-5 gap-10 max-w-7/10 rounded-lg shadow-lg">
+        <aside class="w-full flex flex-col gap-5 sm:flex-row p-5 mb-5 rounded-lg shadow-lg">
             <div>
-                <img src="../src/assets/images/gilang-yuda-alyahya-66DFSxybtQ8-unsplash.jpg" 
-                class="w-64 flex-auto">
+                <img src="../src/assets/images/gilang-yuda-alyahya-66DFSxybtQ8-unsplash.jpg" alt="woman with brown hair and blue shirt
+                smiling" class="max-w-9/10 sm:w-64 sm:flex-none">
             </div>
-            <div class="w-64 flex-none">
+            <div class="max-w-9/10 sm:max-w-3/10 flex-none">
                 <h2 class="font-bold mb-3">Bio</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus molestie vulputate nulla,
                  non gravida dolor aliquam ac. Cras pulvinar metus sed dolor tincidunt, at commodo 
                  erat scelerisque. Phasellus tincidunt, neque quis accumsan pulvinar, erat est consectetur 
                  ipsum, quis ultricies tellus mi ut erat. </p>
             </div>
-            <div class="w-50 flex-none">
+            <div class="max-w-9/10 sm:max-w-3/10 flex-none">
                 <div class="flex flex-col items-center">
                     <h2 class="flex-none font-bold mb-3">Skills and Experience</h2>
                     <ul class="flex-auto list-disc">
