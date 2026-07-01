@@ -2,6 +2,10 @@
 
 A small frontend practice project built to improve responsive web design, layout techniques, and modern UI development.
 
+## Live Demo
+
+https://jamie-tailwind-website.netlify.app/
+
 ## Overview
 
 This project is a multi-page portfolio website consisting of:
@@ -37,13 +41,16 @@ The goal of this project is to practice building a polished website, while follo
 
 ```text
 tailwind-website/
-├── public/
+├── docs/
+|   ├── wireframes/
 ├── src/
 │   ├── assets/
 |       ├── Fonts/
 |       ├── images/
 │   └── input.css
 |   └── output.css
+├── index.html
+├── gallery.md
 ├── README.md
 ├── package.json
 ├── package-lock.json
